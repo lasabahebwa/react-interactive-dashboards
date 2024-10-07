@@ -5,9 +5,12 @@ import React from "react";
 import "zingchart/es6";
 import "zinggrid";
 import ZingChart from "zingchart-react";
+
 import customers from "./customers.js";
+import "./App.css";
 
 function InteractiveDashboards() {
+
   const mediaConsumptionConfig = {
     type: "area",
     stacked: true,
@@ -320,6 +323,7 @@ function InteractiveDashboards() {
       },
     ],
   };
+  
   const websiteTrafficConfig = {
     type: "line",
     backgroundColor: "#FFC107",
