@@ -21,6 +21,11 @@
   padding: 0.5rem 2rem;
 }
 
+.dashboard__header div {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
 .dash__controls {
   display: flex;
   justify-content: flex-end;
@@ -100,6 +105,11 @@
     font-weight: 400;
   }
 }
+
+.welcome__left span {
+  font-weight: 600;
+}
+
 .welcome__center {
   h5 {
     margin-top: 0;
@@ -124,6 +134,10 @@
   color: white;
 }
 
+.card-heading{
+  font-weight: 700;
+}
+
 #card-0-2 {
   background: #fff;
 }
@@ -132,7 +146,7 @@
   background: #2196f3;
   color: white;
 }
-zg-caption{
+zg-caption {
   background-color: #fff;
   color: black;
   font-weight: 600;

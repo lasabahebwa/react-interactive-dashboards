@@ -10,7 +10,6 @@ import customers from "./customers.js";
 import "./App.css";
 
 function InteractiveDashboards() {
-
   const mediaConsumptionConfig = {
     type: "area",
     stacked: true,
@@ -323,7 +322,6 @@ function InteractiveDashboards() {
       },
     ],
   };
-  
   const websiteTrafficConfig = {
     type: "line",
     backgroundColor: "#FFC107",
@@ -502,9 +500,7 @@ function InteractiveDashboards() {
     <div id="dashboard">
       <header className="dashboard__header">
         <h1>My Dashboard</h1>
-        <div style={{ fontWeight: 300, fontSize: "0.9rem" }}>
-          Showing analytics from Today
-        </div>
+        <div>Showing analytics from Today</div>
       </header>
       <section className="dash-row">
         <div id="welcome-message">
@@ -512,9 +508,8 @@ function InteractiveDashboards() {
             <h2>Welcome back Karen!</h2>
             <p>
               We've created a daily analytics report just for you. So far, it
-              looks like traffic has increased{" "}
-              <span style={{ fontWeight: 600 }}>40%</span> from last week! Keep
-              it up!
+              looks like traffic has increased <span>40%</span> from last week!
+              Keep it up!
             </p>
           </div>
           <div className="welcome__center">
@@ -555,17 +550,17 @@ function InteractiveDashboards() {
       </section>
       <section className="graph-row">
         <div id="card-0-1" className="card">
-          <div>Traffic</div>
+          <div className="card-heading">Traffic</div>
           <div>www.yourwebsite.com</div>
           <ZingChart data={websiteTrafficConfig} height="250px" />
         </div>
         <div id="card-0-2" className="card">
-          <div>Budget</div>
+          <div className="card-heading">Budget</div>
           <div>Percentage of annual spend</div>
           <ZingChart data={allocatedBudgetConfig} height="250px" />
         </div>
         <div id="card-1-1" className="card">
-          <div>Interactions</div>
+          <div className="card-heading">Interactions</div>
           <div>Your customer's interactions</div>
           <ZingChart data={customerInteractionsConfig} height="250px" />
         </div>
